@@ -1,0 +1,6 @@
+sudo apt install ntp
+sudo nano /etc/ntp.conf
+service ntp restart
+ntpq -pn
+sudo apt-get install ntpdate
+ntpdate ntp1.jst.mfeed.ad.jp
