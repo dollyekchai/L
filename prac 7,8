@@ -1,0 +1,19 @@
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get -y install openssh-server
+sudo sytemctl status ssh
+sudo systemctl start ssh
+sudo systemctl  enable ssh
+sudo nano /etc/sshd_config
+
+practcial 8:MYSQL server and PhpMyAdmin
+
+sudo apt-get -y install mysql-server-5.7
+mysql -u root -p
+mysql >select user ,host from mysql.user;
+mysql> SHOW VARIABLE WHERE variable_name=’port’
+mysql>exit
+now install phpmyadmin
+sudo apt-get -y install phpmyadmin
+sudo nano /etc/phpmyadmin/apache.conf
+sudo  /etc/init.d/apache2 restart
