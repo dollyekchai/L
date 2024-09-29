@@ -1,0 +1,5 @@
+sudo apt-get install bind9 bind9utils bind9
+sudo nano /etc/bind/named.conf.options
+in config section
+forwarders 8.8.8.8
+sudo systemctl restart bind9
